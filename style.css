@@ -9,6 +9,13 @@
 
 /*#25ccf7*/
 
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    margin:0;
+    
+    
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -44,16 +51,8 @@ body::-webkit-scrollbar {
     padding-bottom: 3%;
     font-weight: 900;
     font-size: 2rem;
+    letter-spacing: 1px;
     color:#fff;
-}
-
-
-
-
-body{
-    font-family: 'Nunito Sans', sans-serif;
-    margin:0;
-    
 }
 
 @media (max-width:990px){
@@ -67,31 +66,20 @@ body{
 
 
 
-/*title*/
+/*title
+
+*/
 
 #title {
     color: #fff;
     background-color: var(--darker-section);
+    background-size: cover;
+    background-attachment: fixed;
     
 }
 
 #title .container-fluid{
     padding: 3% 15% 3%;
-}
-
-.cover-image::before{
-    content:"";
-    display:block;
-    position:absolute;
-    height:100%;
-    background-color: rgba(0,0,0,0.6);
-}
-
-.cover-image{
-    position:absolute;
-    display:block;
-    height:100%;
-    z-index:-1;
 }
 
 
@@ -111,17 +99,19 @@ body{
 }
 
 .nav-link{
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1.1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
 }
 
 
 
-h1{
+#title h1{
     padding-top:150px;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     line-height: 1.5;
     font-weight: 900;
+    letter-spacing: 2px;
 }
 
 
@@ -172,14 +162,18 @@ h1{
 
 .feature-box-bg{
     background-color: var(--darker-section);
+    box-shadow: 0 0 30px var(--shadow-color);
 }
 
 
 /*carousel*/
 
 #tracks{
-    background-color: var(--darker-section);
+    background-image: url("images/realtexture.png");
+    background-attachment: fixed;
+    background-size: cover;
     color: var(--grey-font);
+
 }
 
 #tracks .container-fluid{
@@ -267,19 +261,30 @@ h1{
 /*cta*/
 #cta{
     background-image: url('images/4.jpg');
-    background-position: 10% 20%;
-    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
     text-align: center;
 }
 
 #cta .container-fluid{
-    padding: 15%;
+    padding: 12%;
 }
 
 
 span.my-mark{
     border-right: 2px solid #fff;
+    animation:blink 0.6s step-end infinite;
     -webkit-animation: blink 0.6s step-end infinite;
+}
+
+@keyframes blink{
+    from,
+    to{
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
 }
 
 @-webkit-keyframes blink{
@@ -313,13 +318,13 @@ span.my-mark{
 }
 
 #footer .container-fluid{
-    padding: 7% 15%;
+    padding: 3% 15%;
 }
 
 .contact-icon{
     color:var(--grey-font);
     font-size: 1.2rem;
-    padding: 3% 1%;
+    padding: 2% 1% 2%;
 }
 
 .contact-icon:hover{
@@ -330,5 +335,5 @@ span.my-mark{
 #copyright{
     color:var(--grey-font);
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
