@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0">
+  <title>Rampage</title>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Nunito+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Required meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS: bootstrap and mine, icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="icon/flaticon.css">
+
+</head>
+
+<body>
+  
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand"  href="">Rampage</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="#features"  class="nav-link"  href="">Features</a>
+            </li>
+            <li class="nav-item">
+                <a href="#event" class="nav-link"  href="">Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="#cta" class="nav-link"  href="">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Title -->
+      <div class="row">
+        <div class="col col-lg-5">
+          <h1 id="heading">Coolest Music Every Day</h1>
+          <button type="button" class="btn btn-mint btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-mint btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+        <div class="col col-lg-7">
+          <img src="images/iPhone12mint.png" alt="iphone-mockup" id="iPhone12">
+        </div>
+      </div>
+    </div> 
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <h3 class="feature-title">Feature Genre</h3>
+    <div class="container-fluid">
+      
+      <div class="row">
+        <div class="feature-box col-lg-4 electronic">
+          <i class="flaticon-turntable icon"></i>
+          <h3 class="genre">Electronic</h3>
+          <p class="genre-description">Electro House, Deep House, Liquid Funk, Dark Ambient, Neurofunk, Glitch, Ghetto House, Psychedelic Trance, etc.</p>
+        </div>
+
+        <div class="feature-box col-lg-4 hiphop">
+          <i class="flaticon-music icon"></i>
+          <h3 class="genre">Hip-hop</h3>
+          <p class="genre-description">Boom Bap, G-Funk, Gangsta, Hardcore, Horrorcore, Trap Rap, Drill, Trap Metal, etc.</p>
+        </div>
+
+        <div class="feature-box col-lg-4 metal">
+          <i class="flaticon-electric-guitar icon"></i>
+          <h3 class="genre">Metal</h3>
+          <p class="genre-description">Heavy Metal, Thrash Metal, Death Metal, Black Metal, Nu Metal, Industrial Metal, Grind Core, Progressive Metal, etc.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Tracks 
+  data-bs-interval="false"-->
+
+  <section id="tracks">
+    <h3 class="feature-title">Feature Album</h3>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="3000">
+
+      <div class="carousel-inner">
+        
+        <div class="carousel-item container-fluid">
+          
+          <div class="row">
+            <div class="col-lg-5">
+              <img src="https://i.scdn.co/image/ab67616d0000b2732527ef20ea4a7f21df00b3c7" class="albumcover" alt="odezsa">
+            </div>
+            <div class="col-lg-7">
+              <h3 class="album-name">A Moment Apart</h3>
+              <h5 class="singer-name">ODESZA</h5>
+              <ol class="playlist">
+                <li>Intro</li>
+                <li>A Moment Apart</li>
+                <li>Higher Ground (feat. Naomi Wild)</li>
+                <li>Boy</li>
+                <li>Line Of Sight (feat. WYNNE & Mansionair)</li>
+                <li>Late Night</li>
+              </ol> 
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item active container-fluid">
+          <div class="row">
+            <div class="col-lg-5">
+              <img src="https://e.snmc.io/i/600/s/212ed0ae84ca117f0d1a3edfd5356881/7798229/alon-mor-lands-of-delight-Cover-Art.jpg" class="albumcover" alt="alon">
+            </div>
+            <div class="col-lg-7">
+              <h3 class="album-name">Lands of Delight</h3>
+              <h5 class="singer-name">Alon Mor</h5>
+              <ol class="playlist">
+                <li>Dawn Fall</li>
+                <li>Echoes Follow</li>
+                <li>Vertigo Queen</li>
+                <li>Neolithic Fantasies</li>
+                <li>Flame Devourer</li>
+                <li>Crimson Summit</li>
+              </ol> 
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item container-fluid">
+          <div class="row">
+            <div class="col-lg-5">
+              <img src="https://img.discogs.com/Fjk7vNlbUh3gBPVTr7vbhD_XeqI=/fit-in/600x600/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-14790577-1581659621-2384.jpeg.jpg" class="albumcover" alt="suicideboys">
+            </div>
+            <div class="col-lg-7">
+              <h3 class="album-name">STOP STARING AT THE SHADOWS</h3>
+              <h5 class="singer-name">$uicideboy$</h5>
+              <ol class="playlist">
+                <li>All Dogs Go To Heaven</li>
+                <li>I Wanna Be Romanticized</li>
+                <li>One Last Look At The Damage</li>
+                <li>[whisper indistinctly]</li>
+                <li>MEGA ZEPH</li>
+                <li>Putrid Pride</li>
+              </ol> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev control-button" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" ></span>
+      </button>
+      <button class="carousel-control-next control-button" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </section>
+
+
+
+  <!-- Events -->
+
+  <section id="event">
+    <h3 class="feature-title">Recent Events</h3>
+    <div class="container-fluid">
+      
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+    <div class="container-fluid">
+      <h1 id="tune-in-today">Tune in Today.</h1>
+      <button type="button" class="btn btn-mint btn-lg bottom-button"><i class="fab fa-apple"></i> Download</button>
+      <button type="button" class="btn btn-dark btn-lg bottom-button"><i class="fab fa-google-play"></i> Download</button>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <div class="container-fluid">
+      <i class="fab fa-twitter-square contact-icon"></i>
+      <i class="fab fa-facebook-square contact-icon"></i>
+      <i class="fab fa-instagram-square contact-icon"></i>
+      <p id="copyright">© Copyright 2021 Rampage</p>
+    </div>
+  </footer>
+
+
+</body>
+
+  <!-- Bootstrap/JQuery/mine -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/961826dc85.js" crossorigin="anonymous"></script>
+
+</html>

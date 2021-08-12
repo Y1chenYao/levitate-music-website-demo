@@ -1,0 +1,338 @@
+:root{
+    --button-color: #5affc3;
+    --mint-lighter: #79ffce;
+    --darker-section: #212121;
+    --lighter-section: #323232;
+    --grey-font: #b4b4b4;
+    --shadow-color: #79ffce;
+}
+
+/*#25ccf7*/
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container-fluid{
+    padding: 0% 15% 7%;
+}
+
+.btn-mint{
+    background-color: var(--button-color);
+    color:var(--lighter-section);
+}
+
+.btn-mint:hover{
+    background-color: #fff;
+    color:var(--lighter-section);
+}
+
+.btn-outline-mint{
+    color:var(--button-color);
+    border-color: var(--button-color);
+}
+
+.btn-outline-mint:hover{
+    color:#fff;
+    border-color: #fff;
+}
+
+
+.feature-title{
+    padding-top:7%;
+    padding-left: 16.25%;
+    padding-bottom: 3%;
+    font-weight: 900;
+    font-size: 2rem;
+    color:#fff;
+}
+
+
+
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    margin:0;
+    
+}
+
+@media (max-width:990px){
+    #title {
+        text-align: center;
+    }
+    #title img{
+        width:500px;
+    }
+}
+
+
+
+/*title*/
+
+#title {
+    color: #fff;
+    background-color: var(--darker-section);
+    
+}
+
+#title .container-fluid{
+    padding: 3% 15% 3%;
+}
+
+.cover-image::before{
+    content:"";
+    display:block;
+    position:absolute;
+    height:100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.cover-image{
+    position:absolute;
+    display:block;
+    height:100%;
+    z-index:-1;
+}
+
+
+
+/*navbar*/
+.navbar{
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.5rem;
+}
+
+.nav-item{
+    padding: 0 15px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+
+h1{
+    padding-top:150px;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+#iPhone12{
+    width: 550px;
+}
+
+/*button*/
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+
+
+
+/*feature*/
+
+#features{
+    background-color: var(--lighter-section);
+    color: #fff;
+}
+
+.icon{
+    font-size: 4rem;
+    color: var(--grey-font);
+}
+
+.icon:hover{
+    color: #fff;
+    text-shadow: 0 0 4px var(--shadow-color);
+}
+
+
+.genre{
+    font-weight: 800;
+    color: var(--mint-lighter);
+}
+
+.genre-description{
+    font-weight: 200;
+    color: var(--grey-font);
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.feature-box{
+    padding: 3%;
+}
+
+/*placeholder*/
+.banner{
+    width:100%;
+    height:50vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color:var(--grey-font);
+    z-index: -1;
+}
+
+.text{
+    z-index: 1;
+}
+
+.bg{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    
+}
+
+
+
+/*carousel*/
+
+#tracks{
+    background-color: var(--darker-section);
+    color: var(--grey-font);
+}
+
+#tracks .container-fluid{
+    padding: 3% 15%;
+}
+
+.carousel-inner{
+    height: 400px;
+}
+
+
+
+.control-button{
+    padding-bottom: 8%;
+}
+
+.albumcover{
+    width: 250px;
+    padding-left:18px;
+}
+
+.album-name{
+    font-weight: 900;
+    color:var(--mint-lighter);
+    padding-left: 12px; 
+}
+
+.singer-name{
+    font-weight:300;
+    color: #fff;
+    padding-left: 12px; 
+    padding-bottom: 10px;
+}
+
+
+@media (max-width:990px){
+    .carousel-inner{
+        height: 600px;
+        text-align: center;
+    }
+    .album-name{
+        padding-left:0;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .singer-name{
+        padding-left:0;
+        text-align: center;
+    }
+    .playlist{
+        padding:0 20% 0 30%;
+    }
+    #tracks .feature-title{
+        padding-top:20%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .albumcover{
+        padding-left:0;
+        text-align: center;
+    }
+}
+
+
+
+.playlist{
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+
+
+/*event*/
+#event{
+    background-color: var(--lighter-section); 
+    color:var(--grey-font);
+    
+}
+
+.card{
+    background-color: var(--darker-section); 
+}
+
+/*cta*/
+#cta{
+    background-image: url('images/4.jpg');
+    background-position: 10% 20%;
+    background-size: 100%;
+    text-align: center;
+}
+
+#cta .container-fluid{
+    padding: 15%;
+}
+
+#tune-in-today{
+    font-weight: 900;
+    color:#fff;
+    font-size: 3rem;
+    padding:3% 0 0 0;
+}
+
+.bottom-button{
+    margin:2% 1%;
+}
+
+
+/*footer*/
+
+#footer{
+    background-color: var(--lighter-section);
+    text-align: center;
+}
+
+#footer .container-fluid{
+    padding: 7% 15%;
+}
+
+.contact-icon{
+    color:var(--grey-font);
+    font-size: 1.2rem;
+    padding: 3% 1%;
+}
+
+.contact-icon:hover{
+    color: #fff;
+    text-shadow: 0 0 4px var(--shadow-color);
+}
+
+#copyright{
+    color:var(--grey-font);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
