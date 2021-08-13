@@ -10,7 +10,7 @@
 /*#25ccf7*/
 
 body{
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Barlow', sans-serif;
     margin:0;
     
     
@@ -53,7 +53,7 @@ body::-webkit-scrollbar {
     padding-top:7%;
     padding-left: 16.25%;
     padding-bottom: 3%;
-    font-weight: 900;
+    font-weight: 400;
     font-size: 2rem;
     letter-spacing: 1px;
     color:#fff;
@@ -94,8 +94,9 @@ body::-webkit-scrollbar {
 }
 
 .navbar-brand{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 2.5rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 200;
 }
 
 .nav-item{
@@ -113,9 +114,18 @@ body::-webkit-scrollbar {
 #title h1{
     padding-top:150px;
     font-size: 3.3rem;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+#title h5{
+    padding-top:4px;
+    padding-left:2.6px;
+    font-size: 1rem;
     line-height: 1.5;
-    font-weight: 900;
-    letter-spacing: 2px;
+    font-weight: 100;
+    letter-spacing: 4px;
 }
 
 
@@ -128,6 +138,9 @@ body::-webkit-scrollbar {
     margin: 5% 3% 5% 0;
 }
 
+#title .download-button{
+    margin-left: 4px;
+}
 
 
 /*feature*/
@@ -154,12 +167,13 @@ body::-webkit-scrollbar {
 
 
 .genre{
-    font-weight: 800;
+    font-weight: 500;
     color: var(--mint-lighter);
 }
 
 .genre-description{
-    font-weight: 200;
+    margin-top: 20px;
+    font-weight: 300;
     color: var(--grey-font);
     line-height: 1.5;
     font-size: 1rem;
@@ -167,6 +181,7 @@ body::-webkit-scrollbar {
 
 .feature-box{
     padding: 3%;
+    border-radius: 5%;
 }
 
 .feature-box-bg{
@@ -210,7 +225,7 @@ body::-webkit-scrollbar {
 }
 
 .album-name{
-    font-weight: 900;
+    font-weight: 500;
     color:var(--mint-lighter);
     padding-left: 12px; 
 }
@@ -269,16 +284,23 @@ body::-webkit-scrollbar {
     
 }
 
+.read-more{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+}
+
+
 #event .read-more:hover{
+    font-family: 'Barlow', sans-serif;
     background-color: #fff;
     color:var(--darker-section);
-    font-weight:600;
+    font-weight:500;
     border-color: none;
 }
 
 .card{
     background-color: var(--darker-section); 
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Barlow', sans-serif;
     
 }
 
@@ -303,13 +325,16 @@ body::-webkit-scrollbar {
 }
 
 .card-title{
-    font-weight: 900;
+    font-weight: 500;
     letter-spacing: 1px;
     font-size: 1.3rem;
     color:var(--mint-lighter);
 }
 .card-text{
-    font-weight: 200;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 /*cta*/
@@ -356,9 +381,10 @@ span.my-mark{
 
 
 #tune-in-today{
-    font-weight: 900;
+    font-weight: 400;
     color:#fff;
     font-size: 3rem;
+    letter-spacing: 4px;
     padding:3% 0 0 0;
 }
 
@@ -375,7 +401,7 @@ span.my-mark{
 }
 
 #footer .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 2%;
 }
 
 .contact-icon{
