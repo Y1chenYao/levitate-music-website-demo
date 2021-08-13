@@ -1,4 +1,17 @@
-/*feature box*/
+//back to top
+$(window).scroll(function(){
+  if($(window).scrollTop()>200){
+    $(".btn-back-to-top").fadeIn();
+  }else{
+    $(".btn-back-to-top").fadeOut();
+  }
+});
+
+$(".btn-back-to-top").click(function(){
+  $("html,body").animate({scrollTop:"0px"},200);
+});
+
+//feature fox
 $(".electronic").hover(function(){
   $(".flaticon-turntable").toggleClass("icon-lit");
   $(this).toggleClass("feature-box-bg");
@@ -14,7 +27,7 @@ $(".metal").hover(function(){
   $(this).toggleClass("feature-box-bg");
 });
 
-/*cta headline*/
+//cta headline
 const textEl=document.querySelector("#text");
 const texts=JSON.parse(textEl.getAttribute("data-text"));
 

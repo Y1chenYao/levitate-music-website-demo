@@ -1,11 +1,15 @@
 :root{
-    --button-color: #5affc3;
+    --button-color: #8ae6d3;
     --mint-lighter: #79ffce;
-    --darker-section: #212121;
-    --lighter-section: #323232;
+    --darker-section: #27292c;
+    --lighter-section: #33373f;
     --grey-font: #b4b4b4;
-    --shadow-color: #79ffce;
+    --shadow-color: #8ae6d3;
+    --linear-gradient:linear-gradient(60deg,  #1c1d20 0%,  #2a2f36 100%);
 }
+
+
+
 
 /*#25ccf7*/
 
@@ -29,14 +33,16 @@ body::-webkit-scrollbar {
 }
 
 .btn-mint{
-    background-color: var(--button-color);
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     color:var(--lighter-section);
 }
 
+
 .btn-mint:hover{
-    background-color: #fff;
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
     color:var(--lighter-section);
 }
+
 
 .btn-outline-mint{
     color:var(--button-color);
@@ -47,6 +53,18 @@ body::-webkit-scrollbar {
     color:#fff;
     border-color: #fff;
 }
+
+.btn-gradient{
+    color:#fff;
+    background-image: var(--linear-gradient);
+}
+
+.btn-gradient:hover{
+    color:#fff;
+    background-image: linear-gradient(60deg,  #414552 0%,  #4a5666 100%);
+    
+}
+
 
 
 .feature-title{
@@ -59,6 +77,7 @@ body::-webkit-scrollbar {
     color:#fff;
 }
 
+
 @media (max-width:990px){
     #title {
         text-align: center;
@@ -70,13 +89,35 @@ body::-webkit-scrollbar {
 
 
 
-/*title
+/*title*/
 
-*/
+.btn-back-to-top{
+    border-radius: 100%;
+    border-color: transparent;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    opacity: 0.5;
+    color: var(--darker-section);
+    width:50px;
+    height:50px;
+    position:fixed;
+    bottom:100px;
+    right:50px;
+    transition: 0.1s all ease-in-out;
+    display: none;
+    z-index: 1;
+
+}
+
+.btn-back-to-top:hover{
+    box-shadow: 0 0 4px var(--shadow-color);
+    opacity: 1;
+    
+}
+
 
 #title {
     color: #fff;
-    background-color: var(--darker-section);
+    background-image: var(--linear-gradient);
     background-size: cover;
     background-attachment: fixed;
     
@@ -90,11 +131,11 @@ body::-webkit-scrollbar {
 
 /*navbar*/
 .navbar{
-    padding-bottom: 4.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .navbar-brand{
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Questrial', sans-serif;
     font-size: 1.8rem;
     font-weight: 200;
 }
@@ -112,7 +153,7 @@ body::-webkit-scrollbar {
 
 
 #title h1{
-    padding-top:150px;
+    padding-top:200px;
     font-size: 3.3rem;
     line-height: 1.4;
     font-weight: 400;
@@ -130,12 +171,16 @@ body::-webkit-scrollbar {
 
 
 #iPhone12{
-    width: 550px;
+    width: 340px;
+    margin-left: 80px;
+    transform: rotate(15deg);
 }
 
 /*button*/
 .download-button{
     margin: 5% 3% 5% 0;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
 }
 
 #title .download-button{
@@ -149,6 +194,8 @@ body::-webkit-scrollbar {
     background-color: var(--lighter-section);
     color: #fff;
 }
+
+
 
 .icon{
     font-size: 4rem;
@@ -181,7 +228,7 @@ body::-webkit-scrollbar {
 
 .feature-box{
     padding: 3%;
-    border-radius: 5%;
+    border-radius: 2%;
 }
 
 .feature-box-bg{
@@ -198,9 +245,7 @@ body::-webkit-scrollbar {
 /*carousel*/
 
 #tracks{
-    background-image: url("images/realtexture.png");
-    background-attachment: fixed;
-    background-size: cover;
+    background-image: var(--linear-gradient);
     color: var(--grey-font);
 
 }
@@ -285,13 +330,13 @@ body::-webkit-scrollbar {
 }
 
 .read-more{
-    font-family: 'Barlow', sans-serif;
+    font-family:'Questrial', sans-serif;
     font-weight: 300;
 }
 
 
 #event .read-more:hover{
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Questrial', sans-serif;
     background-color: #fff;
     color:var(--darker-section);
     font-weight:500;
@@ -307,7 +352,9 @@ body::-webkit-scrollbar {
 .card-img-top{
     overflow: hidden;
 }
-
+.card-footer{
+    background-color: var(--darker-section);
+}
 .my-container{
     margin:0;
     padding:0;
@@ -346,7 +393,7 @@ body::-webkit-scrollbar {
 }
 
 #cta .container-fluid{
-    padding: 12%;
+    padding: 14%;
 }
 
 #cta .btn{
@@ -389,7 +436,9 @@ span.my-mark{
 }
 
 .bottom-button{
-    margin:2% 1%;
+    margin:3% 1% 0%;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
 }
 
 
