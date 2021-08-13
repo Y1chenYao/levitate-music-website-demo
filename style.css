@@ -24,6 +24,10 @@ body::-webkit-scrollbar {
     padding: 0% 15% 7%;
 }
 
+.btn:hover{
+    box-shadow: 0 0 4px var(--shadow-color);;
+}
+
 .btn-mint{
     background-color: var(--button-color);
     color:var(--lighter-section);
@@ -141,6 +145,11 @@ body::-webkit-scrollbar {
 .icon-lit{
     color: #fff;
     text-shadow: 0 0 4px var(--shadow-color);
+    -webkit-transition:0.4s;
+    -moz-transition:0.4s;
+    -ms-transition:0.4s;
+    -o-transition:0.4s;
+    transition:0.4s;
 }
 
 
@@ -162,7 +171,12 @@ body::-webkit-scrollbar {
 
 .feature-box-bg{
     background-color: var(--darker-section);
-    box-shadow: 0 0 30px var(--shadow-color);
+    box-shadow: 0 0 20px var(--shadow-color);
+    -webkit-transition:0.4s;
+    -moz-transition:0.4s;
+    -ms-transition:0.4s;
+    -o-transition:0.4s;
+    transition:0.4s;
 }
 
 
@@ -252,10 +266,50 @@ body::-webkit-scrollbar {
     background-color: var(--lighter-section); 
     color:var(--grey-font);
     
+    
+}
+
+#event .read-more:hover{
+    background-color: #fff;
+    color:var(--darker-section);
+    font-weight:600;
+    border-color: none;
 }
 
 .card{
     background-color: var(--darker-section); 
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+
+.card-img-top{
+    overflow: hidden;
+}
+
+.my-container{
+    margin:0;
+    padding:0;
+    
+}
+.card img {
+    width: 100%;
+    transition: 0.3s all ease-in-out;
+    
+}
+
+.card:hover img {
+    transform: scale(1.5);
+    max-width: 100%;
+}
+
+.card-title{
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color:var(--mint-lighter);
+}
+.card-text{
+    font-weight: 200;
 }
 
 /*cta*/
@@ -270,6 +324,9 @@ body::-webkit-scrollbar {
     padding: 12%;
 }
 
+#cta .btn{
+    box-shadow: none;
+}
 
 span.my-mark{
     border-right: 2px solid #fff;

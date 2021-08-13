@@ -14,7 +14,6 @@ $(".metal").hover(function(){
   $(this).toggleClass("feature-box-bg");
 });
 
-
 /*cta headline*/
 const textEl=document.querySelector("#text");
 const texts=JSON.parse(textEl.getAttribute("data-text"));
