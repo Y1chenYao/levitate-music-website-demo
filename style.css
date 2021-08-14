@@ -1,8 +1,8 @@
 :root{
     --button-color: #8ae6d3;
     --mint-lighter: #79ffce;
-    --darker-section: #27292c;
-    --lighter-section: #33373f;
+    --darker-section: #27272c;
+    --lighter-section: #33353f;
     --grey-font: #b4b4b4;
     --shadow-color: #8ae6d3;
     --linear-gradient:linear-gradient(60deg,  #1c1d20 0%,  #2a2f36 100%);
@@ -25,7 +25,7 @@ body::-webkit-scrollbar {
 }
 
 .container-fluid{
-    padding: 0% 15% 7%;
+    padding:7% 15%;
 }
 
 .btn:hover{
@@ -68,24 +68,16 @@ body::-webkit-scrollbar {
 
 
 .feature-title{
-    padding-top:7%;
-    padding-left: 16.25%;
-    padding-bottom: 3%;
     font-weight: 400;
     font-size: 2rem;
+    margin: 0 0 4%;
     letter-spacing: 1px;
     color:#fff;
 }
 
 
-@media (max-width:990px){
-    #title {
-        text-align: center;
-    }
-    #title img{
-        width:500px;
-    }
-}
+
+
 
 
 
@@ -120,13 +112,12 @@ body::-webkit-scrollbar {
     background-image: var(--linear-gradient);
     background-size: cover;
     background-attachment: fixed;
-    
+
 }
 
 #title .container-fluid{
     padding: 3% 15% 3%;
 }
-
 
 
 /*navbar*/
@@ -153,12 +144,16 @@ body::-webkit-scrollbar {
 
 
 #title h1{
-    padding-top:200px;
+    padding-top:30%;
     font-size: 3.3rem;
     line-height: 1.4;
     font-weight: 400;
     letter-spacing: 4px;
 }
+
+
+
+
 
 #title h5{
     padding-top:4px;
@@ -176,6 +171,7 @@ body::-webkit-scrollbar {
     transform: rotate(15deg);
 }
 
+
 /*button*/
 .download-button{
     margin: 5% 3% 5% 0;
@@ -184,8 +180,9 @@ body::-webkit-scrollbar {
 }
 
 #title .download-button{
-    margin-left: 4px;
+    margin-left: 0.5%;
 }
+
 
 
 /*feature*/
@@ -227,12 +224,12 @@ body::-webkit-scrollbar {
 }
 
 .feature-box{
-    padding: 3%;
+    padding:3%;
     border-radius: 2%;
 }
 
 .feature-box-bg{
-    background-color: var(--darker-section);
+    background-color: #2e3036;
     box-shadow: 0 0 20px var(--shadow-color);
     -webkit-transition:0.4s;
     -moz-transition:0.4s;
@@ -250,18 +247,8 @@ body::-webkit-scrollbar {
 
 }
 
-#tracks .container-fluid{
-    padding: 3% 15%;
-}
-
 .carousel-inner{
     height: 400px;
-}
-
-
-
-.control-button{
-    padding-bottom: 8%;
 }
 
 .albumcover{
@@ -283,7 +270,7 @@ body::-webkit-scrollbar {
 }
 
 
-@media (max-width:990px){
+@media (max-width:992px){
     .carousel-inner{
         height: 600px;
         text-align: center;
@@ -298,20 +285,32 @@ body::-webkit-scrollbar {
         text-align: center;
     }
     .playlist{
-        padding:0 20% 0 30%;
+        padding:0 10% 0 25%;
+        text-align: left;
     }
-    #tracks .feature-title{
-        padding-top:20%;
-        padding-left: 0;
-        text-align: center;
-    }
+
     .albumcover{
         padding-left:0;
-        text-align: center;
     }
 }
+@media (max-width:606px){
+    #iPhone12{
+        transform:rotate(0deg);
+        padding-left: 0px;
+        margin-left: 0px;
+        width: 250px;
+    }
+    #title h1{
+        font-size: 2.3rem;
+    }
+
+    #tracks .container-fluid{
+        padding: 6% 15%;
+    }
 
 
+    
+}
 
 .playlist{
     font-weight: 300;
@@ -325,8 +324,6 @@ body::-webkit-scrollbar {
 #event{
     background-color: var(--lighter-section); 
     color:var(--grey-font);
-    
-    
 }
 
 .read-more{
@@ -384,6 +381,15 @@ body::-webkit-scrollbar {
     line-height: 1.5;
 }
 
+@media screen and (max-width:660px){
+    .feature-title{
+        font-size: 1.5rem;
+        
+    }
+}
+
+
+
 /*cta*/
 #cta{
     background-image: url('images/4.jpg');
@@ -392,9 +398,6 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
-#cta .container-fluid{
-    padding: 14%;
-}
 
 #cta .btn{
     box-shadow: none;
@@ -432,13 +435,32 @@ span.my-mark{
     color:#fff;
     font-size: 3rem;
     letter-spacing: 4px;
-    padding:3% 0 0 0;
+    padding:0;
+    margin:12% 0 3%;
 }
 
+#cta .container-fluid{
+    height:500px;
+}
+
+@media screen and (max-width:900px){
+    #tune-in-today{
+        font-size: 2.6rem;
+        letter-spacing: 2px;
+    }
+    #cta .container-fluid{
+        height:400px;
+    }
+}
+
+
 .bottom-button{
+    position: relative;
+
     margin:3% 1% 0%;
     font-family: 'Questrial', sans-serif;
     font-size: 1.2rem;
+    
 }
 
 
@@ -452,6 +474,7 @@ span.my-mark{
 #footer .container-fluid{
     padding: 3% 15% 2%;
 }
+
 
 .contact-icon{
     color:var(--grey-font);
