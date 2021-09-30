@@ -1,2 +1,7 @@
 # levitate-music-website-demo
-Bootstrap-based, fully responsive
+## Feature
+- Bootstrap-based, fully responsive
+## Screenshot
+
+![demo1](./images/demo1.png)
+
